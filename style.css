@@ -5,12 +5,25 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-header div{
-    background-color: antiquewhite;
+header{
+    position: sticky;
+    top: 0;
+    background-color: honeydew;
 }
 
-section {
-    height: 100vh;
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: honeydew;
 }
 
 #hero{
@@ -21,19 +34,22 @@ section {
     justify-content: center;
     align-items: center;
     border: solid 2px black;
+    height: 100vh;
 }
 
 #hero p{
     margin-inline: 20px;
-    margin-block: 10px;
+    margin-block: 60px;
+    text-align: center;
 }
 
 h1{
     font-size: 2.5rem;
 }
 
-#projects h2{
+h2{
     font-size: 1.7rem;
+    text-align: center;
 }
 
 #project-list {
