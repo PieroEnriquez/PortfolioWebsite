@@ -62,10 +62,10 @@ h1{
 }
 
 .project-detail h3{
-    background: khaki;
+    background: darkred;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    color: black;
+    color: white;
     padding: 0.2rem;
 }
 
