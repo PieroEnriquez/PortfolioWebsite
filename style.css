@@ -20,12 +20,18 @@
     margin-block: 60px;
     text-align: center;
     color: white;
+    padding-bottom: 3rem;
 }
 
 h1{
     font-size: 4rem;
     margin: 3em;
     color: white;
+    padding-bottom: 3rem;
+}
+
+h1 span{
+    color: rgb(240, 39, 79);
 }
 
 #hero h2{
@@ -43,6 +49,7 @@ h1{
     background: linear-gradient(90deg, rgba(0,82,40,1) 0%, rgb(3, 3, 3) 100%);
     color: white;
     padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 #project-list{
