@@ -5,9 +5,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background: linear-gradient(90deg, rgb(14, 0, 92) 0%, rgb(3, 3, 3) 100%);
+}
+
 #hero{
-    background: rgb(0,82,40);
-    background: linear-gradient(90deg, rgba(0,82,40,1) 0%, rgb(3, 3, 3) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,12 +34,10 @@ h1{
 }
 
 h1 span{
-    color: rgb(241, 9, 9);
+    color: aqua;
 }
 
 #languages{
-    background: rgb(0,82,40);
-    background: linear-gradient(90deg, rgba(0,82,40,1) 0%, rgb(3, 3, 3) 100%);
     padding: 4rem 0;
 }
 
@@ -84,10 +84,7 @@ img{
 
 .img{
     object-fit: contain;
-    background: rgba(168, 1, 1, 1.0);
-    background: -webkit-radial-gradient(center, rgba(168, 1, 1, 1.0), rgba(217, 236, 58, 1.0));
-    background: -moz-radial-gradient(center, rgba(168, 1, 1, 1.0), rgba(217, 236, 58, 1.0));
-    background: radial-gradient(ellipse at center, rgba(168, 1, 1, 1.0), rgba(217, 236, 58, 1.0));
+    background: radial-gradient(ellipse at center, rgba(168, 1, 1, 1.0), rgb(177, 7, 168));
     padding: 2rem;
 }
 
@@ -102,8 +99,6 @@ img{
 #projects h2{
     text-align: center;
     font-size: 3rem;
-    background: rgb(0,82,40);
-    background: linear-gradient(90deg, rgba(0,82,40,1) 0%, rgb(3, 3, 3) 100%);
     color: white;
     padding-bottom: 3rem;
     padding-top: 3rem;
@@ -113,8 +108,6 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: rgb(0,82,40);
-    background: linear-gradient(90deg, rgba(0,82,40,1) 0%, rgb(3, 3, 3) 100%);
 }
 
 .project-detail{
@@ -143,7 +136,7 @@ img{
 }
 
 a:link{
-    color:green;
+    color: white;
 }
 
 a:visited{
