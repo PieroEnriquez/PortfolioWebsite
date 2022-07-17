@@ -14,7 +14,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
+}
+
+#hero h2{
+    display: flex;
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
 }
 
 #hero p{
@@ -23,6 +31,7 @@ body {
     text-align: center;
     color: white;
     padding-bottom: 3rem;
+    width: 70%;
 }
 
 h1{
@@ -34,18 +43,19 @@ h1{
 }
 
 h1 span{
-    color: aqua;
+    color: rgb(53, 243, 148);
 }
 
 #languages{
     padding: 4rem 0;
 }
 
-#languages h2{
+.section-title {
     font-size: 3rem;
     text-align: center;
     color: white;
     margin-bottom: 5rem;
+    margin-top: 10rem;
 }
 
 #language-list{
@@ -86,22 +96,6 @@ img{
     object-fit: contain;
     background: radial-gradient(ellipse at center, rgba(168, 1, 1, 1.0), rgb(177, 7, 168));
     padding: 2rem;
-}
-
-#hero h2{
-    display: flex;
-    font-size: 1.7rem;
-    text-align: center;
-    padding-top: 1rem;
-    color: white;
-}
-
-#projects h2{
-    text-align: center;
-    font-size: 3rem;
-    color: white;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
 }
 
 #project-list{
