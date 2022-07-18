@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Piero Enriquez</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCJW91ObNG_ZQmamAc83_2tBzHwxVnSStc",
+          authDomain: "portfoliowebsite-e3c07.firebaseapp.com",
+          projectId: "portfoliowebsite-e3c07",
+          storageBucket: "portfoliowebsite-e3c07.appspot.com",
+          messagingSenderId: "317394459528",
+          appId: "1:317394459528:web:55b30ed66f08aea970f83d",
+          measurementId: "G-P61XSJLWBN"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</head>
+<body>
+    <main>
+        <section id="hero">
+            <h1><span>Piero</span> Enriquez</h1>
+            <h2>Junior Programmer</h2>
+            <p>
+                I am an enthusiast backend programmer looking forward to prove my Solidity skills by contributing in a web3 project.
+                Currently looking for a job to learn and improve my skills while learning other technologies to increse my perspective.
+            </p>
+        </section>
+        <section id="languages">
+            <h2 class="section-title">Languages</h2>
+            <div id="language-list">
+                <div class="language-item">
+                    <h3>HTML</h3>
+                    <img src="./Images/HTML.png" alt="HTML" class="img">
+                </div>
+                <div class="language-item">
+                    <h3>CSS</h3>
+                    <img src="./Images/CSS.png" alt="CSS" class="img">
+                </div>
+                <div class="language-item">
+                    <h3>Javascript</h3>
+                    <img src="./Images/Javascript.png" alt="Js" class="img">
+                </div>
+                <div class="language-item">
+                    <h3>Solidity</h3>
+                    <img src="./Images/Solidity.png" alt="Sol" class="img">
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div id="project-list">
+                <div class="project-detail">
+                    <h3>Lotery System</h3>
+                    <p>This smart contract is made to create a transparent lotery system, using an ERC20 token as a reference to buy the ticket, equaling the price of an ether per token. It also uses the OpenZeppelin library to prevent overflow on operations.</p>
+                    <a href="https://github.com/PieroEnriquez/LoterySystem">Click here to see the contract</a>
+                </div>
+                <div class="project-detail">
+                    <h3>College Evaluation System</h3>
+                    <p>This smart contract uses blockchain as a solution for a simple evaluation system, where teachers can publish students grades and they can ask for revisions on it, making it possible to override the grades.</p>
+                    <a href="https://github.com/PieroEnriquez/Evaluation_System">Click here to see the contract</a>
+                </div>
+                <div class="project-detail">
+                    <h3>Covid Tests Management for Clinics</h3>
+                    <p>This smart contract makes the management of covid tests easier by using blockchain to eliminate intermediaries and provide security to the client's data.</p>
+                    <a href="https://github.com/PieroEnriquez/CovidTestsManagement">Click here to see the contract</a>
+                </div>
+                <div class="project-detail">
+                    <h3>Insurance service for both a lab and a client</h3>
+                    <p>This smart contract uses an ERC20 token to manage an insurance service by a factory of smart contracts with preset functions to guarantee the security of users and labs data.</p>
+                    <a href="https://github.com/PieroEnriquez/Insurance_Service">Click here to see the contract</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="section-title">Contact me</h2>
+            <form onsubmit="event.preventDefault(); validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name">
+                <small class="error"></small>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Your email">
+                <small class="error"></small>
+
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Your message" rows="6"></textarea>
+                <small class="error"></small>
+
+                <div class="submit-btn">
+                    <input type="submit" value="Send message">
+                    <p id="success"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
