@@ -65,22 +65,18 @@
         </section>
         <section id="contact">
             <h2 class="section-title">Contact me</h2>
-            <form onsubmit="event.preventDefault(); validateForm()">
+            <form class="contact-form" method="POST" action="https://formsubmit.co/pieroenriquezvera@gmail.com">
                 <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Your name">
-                <small class="error"></small>
+                <input name="name" type="text" id="name" placeholder="Your name" required>
 
                 <label for="email">Email:</label>
-                <input type="text" id="email" placeholder="Your email">
-                <small class="error"></small>
+                <input name="email" type="email" id="email" placeholder="Your email" required>
 
                 <label for="message">Message:</label>
-                <textarea id="message" placeholder="Your message" rows="6"></textarea>
-                <small class="error"></small>
+                <textarea name="message" id="message" placeholder="Your message" rows="6" required></textarea>
 
                 <div class="submit-btn">
                     <input type="submit" value="Send message" id="submit">
-                    <p id="success"></p>
                 </div>
             </form>
         </section>
@@ -88,6 +84,5 @@
     <footer>
 
     </footer>
-    <script src="script.js" defer></script>
 </body>
 </html>
