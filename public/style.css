@@ -168,7 +168,7 @@ input, textarea {
     border-bottom: 1px solid rgb(206, 206, 206);
 }
 
-input[type="text"]:focus, textarea:focus {
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     border-bottom: 1px solid rgb(255,0,106);
 }
 
