@@ -159,7 +159,7 @@ label {
     margin: 20px 0;
 }
 
-input, textarea {
+input, textarea, button {
     width: 100%;
     padding: 10px;
     outline: none;
@@ -184,7 +184,7 @@ textarea::-webkit-scrollbar-thumb {
     text-align: center;
 }
 
-input[type="submit"] {
+#submit {
     margin-top: 30px;
     width: 90%;
     max-width: 200px;
