@@ -1,20 +1,31 @@
-const formName = document.getElementById('name')
-const formEmail = document.getElementById('email')
-const formMessage = document.getElementById('message')
-const formBtn = document.getElementById('submit')
+const formBtn = document.querySelector('button')
 
-formBtn.addEventListener('click', async (e) => {
-    e.preventDefault()
-    if (input.value == '') { return }
-    const res = await fetch('http://localhost:5000/', {
-        method: 'POST',
-        Headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            parcel: input.value
-        })
-    })
-    res()
+formBtn.addEventListener('click', e => {
+    e.preventDefault
 })
+
+
+// formBtn.addEventListener('click', async () => {
+
+//     const formName = document.getElementById('name')
+//     const formEmail = document.getElementById('email')
+//     const formMessage = document.getElementById('message')
+//     console.log(formName)
+
+//     if (input.value == '') return
+//     const res = await fetch('http://localhost:5000/', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: `{
+//             "name": ${formName},
+//             "email": ${formEmail},
+//             "message": ${formMessage}
+//         }`
+//     })
+
+//     console.log(res)
+//     return res.json()
+// })
 

@@ -18,11 +18,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html')
 })
 
-app.post('/', (req, res) => {
-    const { parcel } = req.body
-    console.log(parcel)
-    
-    let contact = new Contact()
+app.post('/', async (req, res) => {
+    const contact = await Contact.create(req.body)
+    console.log(req.body)
+    res.status(201).json({ contact })
 })
 
 const start = async () => {

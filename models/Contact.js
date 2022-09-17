@@ -2,17 +2,14 @@ const mongoose = require('mongoose')
 
 const contactSchema = new mongoose.Schema({
     name: {
-        type: String,
-        required: [true, 'Must provide name']
+        type: String
     },
     email: {
-        type: String,
-        required: [true, 'Must provide email']
+        type: String
     },
     message: {
-        type: String,
-        default: 'Someone new is trying to contact you!'
+        type: String
     }
 })
 
-module.exports = contactSchema
+module.exports = mongoose.model('Contact', contactSchema)
