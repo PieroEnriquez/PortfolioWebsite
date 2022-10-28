@@ -1,31 +1,14 @@
-const formBtn = document.querySelector('button')
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-formBtn.addEventListener('click', e => {
-    e.preventDefault
-})
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-
-// formBtn.addEventListener('click', async () => {
-
-//     const formName = document.getElementById('name')
-//     const formEmail = document.getElementById('email')
-//     const formMessage = document.getElementById('message')
-//     console.log(formName)
-
-//     if (input.value == '') return
-//     const res = await fetch('http://localhost:5000/', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//         body: `{
-//             "name": ${formName},
-//             "email": ${formEmail},
-//             "message": ${formMessage}
-//         }`
-//     })
-
-//     console.log(res)
-//     return res.json()
-// })
-
+reportWebVitals();
