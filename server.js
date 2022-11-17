@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`)
+app.listen(port, async () => {
+  try {
+    console.log(`Server running at http://localhost:${port}`)
+  } catch (error) {
+    console.log(error)
+  }
 })
