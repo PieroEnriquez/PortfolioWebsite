@@ -1,10 +1,11 @@
 export const profile = {
   name: 'Piero Enriquez',
-  role: 'AI Infrastructure Engineer',
+  role: 'Product Engineer',
   pitch:
-    'I build the plumbing that lets AI agents do real work inside a company without anyone losing sleep: ' +
-    'permission tiers, sandboxed VMs, human approvals, and an audit trail for every tool call. ' +
-    'Before that I shipped crypto payment rails and fintech backends at Bitrefill.',
+    'I build products end to end, from the backend to the screen people actually use. ' +
+    'Most recently that was an AI agent platform most of Bitrefill now hands real work to: ' +
+    'the Slack experience, the approval flows, and the sandboxed infrastructure underneath. ' +
+    'Before that I shipped crypto payment rails and a fintech card.',
   email: 'pieroenriquezvera@gmail.com',
   github: 'https://github.com/PieroEnriquez',
   linkedin: 'https://www.linkedin.com/in/piero-enriquez-vera-21599b232/',
